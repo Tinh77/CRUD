@@ -12,11 +12,11 @@ $(document).ready(function () {
                 url: "/Product/Delete?id=" + currentbtn.attr("id"),
                 method: "DELETE",
                 success: function () {
-                    $("alert-success").text("Delete Success")
+                    $(".alert-success").text("Delete Success")
                     currentbtn.closest("li").remove();
                 },
                 error: function () {
-                    $("alert-danger").text("Delete Failed")
+                    $(".alert-danger").text("Delete Failed")
                 }
             });
         }
